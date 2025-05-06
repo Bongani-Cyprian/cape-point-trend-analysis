@@ -1,35 +1,34 @@
-# cape-point-trend-analysis
-Timeseries trend analysis of methane and CO2 concentrations at Cape Point using R
+# Cape Point CO₂ Trend Analysis 
 
-# Cape Point Methane & CO2 Trend Analysis 🌍
+This R project analyses long-term atmospheric carbon dioxide (CO₂) concentrations at Cape Point, South Africa, using statistical trend analysis and interactive visualisation.
 
-This R-based analysis evaluates long-term atmospheric methane (CH₄) and carbon dioxide (CO₂) concentrations at Cape Point, South Africa. It applies Mann-Kendall trend testing and visualizes changes over time using openair, ggplot2, and plotly.
+##  Key Features
 
-## 📊 Features
+- Data interpolation for missing values
+- Theil-Sen slope estimation
+- Mann-Kendall trend test (1994–2019)
+- Interactive Z-score visualisation using Plotly
 
-- Time-series interpolation and cleaning
-- Mann-Kendall trend testing (1994–2019)
-- Trend plots with Theil-Sen estimators
-- Interactive bar charts with confidence lines
-- Data preprocessing using `signal::interp1` and `openair`
+##  Tools & Packages
 
-## 🧰 Technologies Used
+- **R**
+- `openair`, `trend`, `plotly`, `dplyr`, `signal`, `ggplot2`
 
-- R
-- Packages: `openair`, `trend`, `signal`, `plotly`, `ggplot2`, `lubridate`, `dplyr`
+##  How to Use
 
-## 📂 Data Sources
+1. Install required R packages.
+2. Load the provided CSV file (with `date` and `origdat` columns).
+3. Run the script `co2_trend_analysis_cape_point.R` to generate trends and plots.
 
-CH₄ and CO₂ CSV files recorded at Cape Point atmospheric research station, formatted with timestamp and concentration values.
+## Data Format
 
-## 🧪 How to Run
+CSV file with:
+- `date`: DateTime format
+- `origdat`: CO₂ concentration in ppm
 
-1. Install the required R packages (see script).
-2. Place your `.csv` files in the correct directory.
-3. Run the script to generate plots and annual trend z-scores.
+## Author
 
-## 👨🏽‍🔬 Author
+Project by **Bongani Mkhize** — passionate about  data analytics and insights.
 
-Project by Bongani Mkhize — passionate about climate analytics and environmental data science.
 
 
