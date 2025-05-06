@@ -1,6 +1,6 @@
 # Cape Point CO₂ Trend Analysis 
 
-This R project analyses long-term atmospheric carbon dioxide (CO₂) concentrations at Cape Point, South Africa, using statistical trend analysis and interactive visualisation.
+This project R project analyses long-term atmospheric carbon dioxide (CO₂) concentrations at Cape Point, South Africa, using statistical trend analysis and interactive visualisation.
 
 ##  Key Features
 
