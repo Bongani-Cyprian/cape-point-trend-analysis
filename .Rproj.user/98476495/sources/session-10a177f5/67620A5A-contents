@@ -1,0 +1,24 @@
+# Read data (assuming 'TIME' is your datetime column)
+CO2 <- read.csv("CPT_GR_data_format_CO2.csv", header = TRUE)
+
+# Convert 'TIME' to POSIXct and rename to 'date' (required by openair)
+CO2 <- CO2 %>%
+  rename(date = TIME) %>%  # Rename "TIME" to "date"
+  mutate(date = as.POSIXct(date, format = "%m/%d/%Y %H:%M", tz = "GMT"))
+# Interpolate missing 'origdat' values
+CO2$origdat <- interp1(
+  x = as.numeric(rownames(CO2[!is.na(CO2$origdat), ]),
+                 y = CO2$origdat[!is.na(CO2$origdat)],
+                 xi = as.numeric(rownames(CO2)),
+                 method = "spline"
+  )
+
+  # Interpolate missing 'origdat' values
+  CO2$origdat <- interp1(
+    x = as.numeric(rownames(CO2[!is.na(CO2$origdat), ]),
+                   y = CO2$origdat[!is.na(CO2$origdat)],
+                   xi = as.numeric(rownames(CO2)),
+                   method = "spline"
+    )
+  
+    
