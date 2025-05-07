@@ -1,0 +1,31 @@
+# === R history and session files ===
+.Rhistory
+.RData
+.Rproj.user/
+
+# === Output and cache files ===
+*.rds
+*.rdata
+*.feather
+*.tsv
+*.sav
+
+# === System/IDE files ===
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# === Quarto or R Markdown cache ===
+*_cache/
+*.utf8.md
+*.knit.md
+
+# === Python-related if using reticulate ===
+*.ipynb
+__pycache__/
+*.pyc
+
+# === Ignore folders you may not want to track ===
+output/
+cache/
