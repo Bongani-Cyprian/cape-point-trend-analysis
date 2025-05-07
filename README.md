@@ -1,34 +1,22 @@
-# Cape Point CO₂ Trend Analysis 
+# CO₂ Trend Analysis at Cape Point
 
-This project R project analyses long-term atmospheric carbon dioxide (CO₂) concentrations at Cape Point, South Africa, using statistical trend analysis and interactive visualisation.
+This project performs a time series and trend analysis on CO₂ concentration data collected from Cape Point.
 
-##  Key Features
+## Features
 
-- Data interpolation for missing values
+- Time series line plot
+- Seasonal decomposition
+- Mann-Kendall trend test
 - Theil-Sen slope estimation
-- Mann-Kendall trend test (1994–2019)
-- Interactive Z-score visualisation using Plotly
 
-##  Tools & Packages
+## Requirements
 
-- **R**
-- `openair`, `trend`, `plotly`, `dplyr`, `signal`, `ggplot2`
+Install R packages:
+```r
+install.packages(c("openair", "trend", "lubridate", "ggplot2", "plotly", "forecast", "fpp2"))
+## How to Run
+Clone the repo.
 
-##  How to Use
+Open co2_analysis.R in RStudio or R.
 
-1. Install required R packages.
-2. Load the provided CSV file (with `date` and `origdat` columns).
-3. Run the script `co2_trend_analysis_cape_point.R` to generate trends and plots.
-
-## Data Format
-
-CSV file with:
-- `date`: DateTime format
-- `origdat`: CO₂ concentration in ppm
-
-## Author
-
-Project by **Bongani Mkhize** — passionate about  data analytics and insights.
-
-
-
+Run the script step-by-step.
